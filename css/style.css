@@ -1,0 +1,134 @@
+/*body{
+    background-image: url("/html-aulas/hmtl/img/OIP.jfif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+h1{
+    color: rgb(92, 13, 167);
+}*/
+
+*{
+    box-sizing: border-box;
+}
+
+#paragrafo1{
+    grid-area: parag1;
+    margin-right: 5vw;
+}
+
+#barra.lateral{
+    grid-area: bar_lateral;
+    display: flex;
+    flex-direction: column;
+    margin: 3vh 5vw 0 10vh;
+    padding: 0 2vw 0 2vw;
+}
+
+header{
+    height: 68vh;
+    display: grid;
+    grid-template-areas: 'parag1 parag1 bar_lateral';
+    justify-content: center;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+main{
+    margin-left: 3vw;
+    margin-right: 3vw;
+    text-align: justify;
+}
+
+
+
+body{
+    background: url(https://media.istockphoto.com/photos/pair-of-dice-picture-id146750903?k=6&m=146750903&s=612x612&w=0&h=UrF6Cv13-sB-x1qhqELXQvU1dCmnO-R04wia43iudqA=) no-repeat center fixed;
+    background-size: auto;
+}
+
+h1{
+    font-size: 35px;
+    border: solid 3px navy;
+    margin: 50px 50px 70px 35px;
+    /* top right bottom left*/
+    /*padding: 20px;*/
+    /*max-width: 750px;*/
+}
+
+h1:hover{
+    font-size: 35px;
+    color: darkred;
+    background-color: rgb(236, 235, 235);
+}
+
+h2:hover{
+color: darkred ;
+}
+
+h3{
+    color: navy;
+}
+
+p{
+    text-align: justify;
+    direction: ltr;
+    text-indent: 50px;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    /*text-decoration*/
+    /*text-transform*/
+    /*letter-spacing*/
+    /*letter-height*/
+    /*word-spacing*/
+}
+
+ul,ol{
+    font-size: 17px;
+}
+table, tr, th, td{
+    border: solid 2px navy;
+    border-collapse: collapse;
+}
+
+footer{
+    background-color: antiquewhite;
+}
+
+@media only screen and (max-width: 992px){
+    main, header{
+        margin-right: 1vw;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    table, tr, th, td{
+        font-size: 8px;
+    }
+
+    h3{
+        font-size: 10px;
+    }
+
+    h2{
+        font-size: 15px;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    #barra.lateral{
+        display: none;
+    }
+}
+
+
+/*.color_darkred{
+    color: darkred;
+}
+
+#Distribuição_de_Poisson{
+    color: darkred;
+}
